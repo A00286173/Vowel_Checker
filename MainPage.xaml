@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VowelChecker.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout 
+        Spacing="25" 
+        Padding="30"
+        VerticalOptions="Center">
+
+            <!-- Instruction Label -->
+            <Label 
+            Text="Enter a single letter (uppercase or lowercase) and click Check:"
+            FontSize="Medium"
+            HorizontalOptions="Center" />
+
+            <!-- Entry for letter input -->
+            <Entry 
+            x:Name="LetterEntry"
+            WidthRequest="200"
+            HorizontalOptions="Center"
+            Placeholder="Enter a letter here" />
+
+            <!-- Button to check the letter -->
+            <Button 
+            Text="Check Vowel"
+            WidthRequest="200"
+            HorizontalOptions="Center"
+            Clicked="OnCheckVowelClicked" />
+
+            <!-- Label for displaying results -->
+            <Label 
+            x:Name="ResultLabel"
+            Text="Result will appear here"
+            FontSize="Medium"
+            HorizontalOptions="Center" />
+
+            <!-- Optional: Button to clear or continue -->
+            <Button 
+            Text="Clear or Continue"
+            WidthRequest="200"
+            HorizontalOptions="Center"
+            Clicked="OnClearClicked" />
+
+            <!-- You could add a 'Quit' button or let the user close the app. -->
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

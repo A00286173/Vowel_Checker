@@ -36,14 +36,14 @@
             FontSize="Medium"
             HorizontalOptions="Center" />
 
-            <!-- Optional: Button to clear or continue -->
+           
             <Button 
             Text="Clear or Continue"
             WidthRequest="200"
             HorizontalOptions="Center"
             Clicked="OnClearClicked" />
 
-            <!-- You could add a 'Quit' button or let the user close the app. -->
+          
 
         </VerticalStackLayout>
     </ScrollView>

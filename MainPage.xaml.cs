@@ -11,10 +11,10 @@ namespace VowelChecker
 
         private void OnCheckVowelClicked(object sender, EventArgs e)
         {
-            // Get the user input from the Entry
+          
             string input = LetterEntry.Text;
 
-            // Basic validation
+            // validation
             if (string.IsNullOrWhiteSpace(input))
             {
                 ResultLabel.Text = "Please enter a letter.";
@@ -34,7 +34,7 @@ namespace VowelChecker
                 return;
             }
 
-            // Use either an if/else or switch; here's a switch example:
+         
             switch (lowerCaseLetter)
             {
                 case 'a':
@@ -52,7 +52,7 @@ namespace VowelChecker
 
         private void OnClearClicked(object sender, EventArgs e)
         {
-            // Clear the Entry field and the result to allow another check
+            // Clears the Entry field and the result to allow another check
             LetterEntry.Text = string.Empty;
             ResultLabel.Text = "Result will appear here";
         }
